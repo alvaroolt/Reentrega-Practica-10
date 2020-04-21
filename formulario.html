@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SoundBlogs</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Bangers&family=Indie+Flower&family=Lato&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="formulario">
+    <header>
+        <h1>SOUND BLOGS</h1>
+    </header>
+
+    <div id="contenedormainydatos">
+        <main>
+            <fieldset>
+                <form>
+                    <legend>Contáctanos</legend><br />
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" class="labelsformulario" required><br /><br />
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="labelsformulario"
+                        pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                        required><br /><br />
+                    <div>
+                        <textarea rows="5" cols="20" required></textarea>
+                        <button input type="submit">ENVIAR</button>
+                    </div>
+                </form>
+            </fieldset>
+        </main>
+
+        <div id="navydatos">
+            <nav>
+                <ul>
+                    <a href="index.html">
+                        <li><i class="material-icons">home</i>Inicio</li>
+                    </a>
+                    <a href="formulario.html">
+                        <li><i class="material-icons">list_alt</i>Formulario</li>
+                    </a>
+                </ul>
+            </nav>
+            <div>
+                <img src="icon/mifoto.png">
+                <ul>
+                    <li>Álvaro Leiva Toledano</li>
+                    <li>21 años</li>
+                    <li>Córdoba, España</li>
+                    <li>IES Gran Capitán</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Álvaro Leiva Toledano</h3>
+        <a href="https://twitter.com/alvaroo_leto" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/alvaroolt" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+        <p id="info"><a href="">Información</a> | <a href="">Soporte</a> | <a href="">Términos de uso</a>
+            <a href="">Política de privacidad</a></p>
+    </footer>
+</body>
+
+</html>

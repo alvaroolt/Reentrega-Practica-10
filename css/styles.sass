@@ -1,0 +1,177 @@
+// font-family: 'Indie Flower', cursive;
+// font-family: 'Bangers', cursive;
+// font-family: 'Lato', sans-serif;
+// font-family: 'Baloo Paaji 2', cursive;
+    
+body
+    background-color: #FFE1B8
+    header
+        h1
+            font-family: 'Bangers', cursive
+            text-align: center
+            transition: transform 2s
+            transform: rotateY(360deg) rotateX(360deg)
+            @media screen and (min-width: 830px)
+                font-size: 70px
+    main
+        section
+            article
+                background-color: white
+                font-family: 'Baloo Paaji 2', cursive
+                margin: 2%
+                border: 2px solid black
+                h2
+                    font-family: 'Lato', sans-serif
+                    text-align: center
+                #titulotablet
+                    display: none
+                img
+                    display: flex
+                    margin: auto
+                    width: 90px
+                ul
+                    list-style: none
+                    margin: 10px 10px
+                    padding: 0
+                    li
+                        display: flex
+                        margin: 5px 5px
+                        text-align: center
+                        align-items: center
+                        justify-content: center
+                        img
+                            width: 40px
+                            margin: 0
+                p
+                    text-align: justify
+                    margin: 5px
+            @media screen and (min-width: 830px)
+                article
+                    display: flex
+                    align-items: center
+                    transition: all 1s
+                    div
+                        margin: 10px 10px 10px 10px
+                    h2
+                        font-size: 30px
+                        text-align: left
+                    #titulomovil
+                        display: none
+                    #titulotablet
+                        display: block
+                    img
+                        width: 150px
+                    p
+                        font-size: 25px
+                    ul
+                        li
+                            font-size: 22px
+                article:hover
+                    transform: scale3d(1.1,1.1,1.1)
+            
+    #navydatos
+        background-color: white
+        font-family: 'Indie Flower', cursive
+        border: 2px dashed black
+        margin: 4%
+        nav, div
+            ul
+                list-style: none
+                padding: 0
+                li
+                    display: flex
+                    align-items: center
+                    margin: 5px 5px
+                a
+                    text-decoration: none
+                    color: black
+        nav
+            a
+                transition: all 1s
+            a:hover
+                color: blue
+                i
+                    transform: scale3d(1.5,1.5,1.5) rotateY(360deg)
+        img
+            display: flex
+            margin: auto
+            width: 90px
+        @media screen and (min-width: 1140px)
+            width: 30%
+            nav, div
+                ul
+                    li
+                        font-size: 26px
+            img
+                width: 120px
+    footer
+        background-color: #282828
+        padding-top: 2px
+        padding-bottom: 2px
+        text-align: center
+        font-size: 10px
+        color: white
+        font-family: 'Baloo Paaji 2', cursive
+        .social
+            display: inline-block
+            height: 30px
+            margin: 5px
+            transition: all 0.5s
+            width: 30px
+        .social:hover
+            transform: scale3d(2,2,2) rotateY(360deg)
+        #info
+            a:link, a:visited, a:active
+                text-decoration: none
+                color: lightgray
+            a:hover
+                color: darkgray
+        @media screen and (min-width: 830px)
+            font-size: 15px
+
+    @media screen and (min-width: 830px)
+        #contenedormainydatos
+            display: flex
+            #navydatos
+                height: 100%
+                margin-left: 0
+                font-size: 20px
+
+#formulario
+    font-family: 'Baloo Paaji 2', cursive
+    #contenedormainydatos
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        fieldset
+            border: 2px solid black
+            div
+                display: flex
+                flex-wrap: wrap
+                align-items: flex-end
+                button
+                    margin: 5px
+                    height: 25px
+            label
+                padding: 10px
+            input
+                border: 2px solid gray
+                border-radius: 15px
+                width: 60%
+        @media screen and (min-width: 830px)
+            #navydatos
+                margin: 5%
+    @media screen and (min-width: 1140px)
+        fieldset
+            width: 700px
+            legend, label, input
+                margin: 20px
+            legend
+                font-size: 35px
+            label
+                font-size: 28px
+                textarea
+                    width: 80%
+        #navydatos
+            width: 20%
